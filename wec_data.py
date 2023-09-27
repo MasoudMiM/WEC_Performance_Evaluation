@@ -26,8 +26,12 @@ dic_mccabe_wave_pump['McCabe_Wave_Pump_Model_Size_5'] = \
 
 print(dic_mccabe_wave_pump.keys())
 print(len(dic_mccabe_wave_pump['McCabe_Wave_Pump_Model_Size_1']))
-# conver the list into numpy 2d array
+# convert the list into numpy 2d array
 
 my_list = dic_mccabe_wave_pump['McCabe_Wave_Pump_Model_Size_1']
-my_array = np.array(my_list)
-print(my_array.shape)
+wec_type = my_list[20]['wec_type']
+wec_scale = my_list[20]['wec_scale']
+Tp_values = my_list[20]['peak_period_range']['value']
+print(Tp_values)
+
+
